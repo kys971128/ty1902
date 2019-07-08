@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#slider {
+  width: 770px;
+  height: 360px;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+
+#slider img {
+  position: absolute;
+  display: block;
+}
+
+#slider img:first-of-type {
+  z-index: 1;
+}
+
+#slider ul {
+  position: absolute;
+  bottom: 15px;
+  left: 300px;
+  z-index: 1000;
+}
+
+#slider ul li {
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  float: left;
+  background: #999;
+  line-height: 21px;
+  margin: 0 5px 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#slider ul .index {
+  box-shadow: 0 0 8px #ccc;
+  color: #000;
+  background: #fff;
+}
+
+#main_r {
+  width: 202px;
+  height: 360px;
+  float: left;
+}
+
+#main_r div {
+  width: 200px;
+  height: 120px;
+  border-bottom: 1px dotted #ddd;
+}
+
+#main_r div ._hover {
+  margin-left: -12px;
+  transition: all 0.4s ease-out;
+}
+
+#main_r div ._unhover {
+  margin-left: 0px;
+  transition: all 0.4s ease-out;
+}
+
+#main_r div:nth-of-type(3) {
+  border: 0;
+}
+
+#day {
+  width: 100%;
+  height: 480px;
+  background: #ccc;
+  margin-top: 20px;
+}
+
+#day #dayCen {
+  width: 1198px;
+  height: 458px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+#day #dayCen #d_left {
+  width: 328px;
+  height: 458px;
+  float: left;
+  width: 328px;
+  height: 415px;
+  position: relative;
+}
+
+#day #dayCen #d_left #bg {
+  width: 328px;
+  height: 458px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#day #dayCen #d_left #jxz {
+  position: absolute;
+  z-index: 3;
+  left: 213px;
+  top: 181px;
+}
+
+#day #dayCen #d_left #clock {
+  position: absolute;
+  z-index: 3;
+  left: 101px;
+  top: 192px;
+}
+
+#day #dayCen #d_left #time {
+  height: 40px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  z-index: 3;
+  left: 132px;
+  top: 186px;
+}
+
+#day #dayCen #d_left #app {
+  width: 280px;
+  height: 32px;
+  position: absolute;
+  bottom: -20px;
+  left: 25px;
+  z-index: 3;
+  background: #FF7188;
+  border-radius: 16px;
+}
+
+#day #dayCen #d_right {
+  width: 870px;
+  height: 458px;
+  background-color: #FF7188;
+  float: right;
+}
+
+#day #dayCen #d_right #title {
+  width: 816px;
+  height: 67px;
+  background-color: orange;
+  margin-left: 26px;
+  border-bottom: 1px dotted #ddd;
+  position: relative;
+}
+
+#day #dayCen #d_right #title #left-arrow {
+  width: 20px;
+  height: 30px;
+  background: url(../image/index-ico.png) -76px -16px;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  z-index: 100;
+}
+
+#day #dayCen #d_right #title #right-arrow {
+  width: 20px;
+  height: 30px;
+  background: url(../image/index-ico.png) -57px -16px;
+  position: absolute;
+  top: 22px;
+  right: 20px;
+}
+
+#day #dayCen #d_right #shop {
+  width: 856px;
+  height: 364px;
+  background-color: #ccc;
+}

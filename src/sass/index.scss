@@ -1,0 +1,152 @@
+@import "public.scss";
+#slider{
+	@include size(770px,360px);
+	float: left;
+	cursor: pointer;
+	position: relative;
+	img{
+		position: absolute;
+		display: block;
+	}
+	img:first-of-type{
+		z-index: 1;
+	}
+	ul{
+		position: absolute;
+		bottom: 15px;
+		left: 300px;
+		z-index: 1000;
+		li{
+			@include size(21px,21px);
+			border-radius: 50px;
+			float: left;
+			background: #999;
+			line-height: 21px;
+			margin: 0 5px 0 0;
+			text-align: center;
+			font-size:12px;
+			color: #fff;
+			cursor: pointer;
+			
+		}
+		.index{
+			box-shadow: 0 0 8px #ccc;
+			color: #000;
+			background:#fff;
+		}
+	}
+}
+#main_r{
+	@include size(202px,360px);
+	float: left;
+	// background-color: orange;
+	div{
+		@include size(200px,120px);
+		border-bottom: 1px dotted #ddd;
+		._hover{
+			margin-left: -12px;
+			transition:all 0.4s ease-out;
+		}
+		._unhover{
+			margin-left: 0px;
+			transition:all 0.4s ease-out;
+		}
+	}
+	div:nth-of-type(3){
+		border: 0;
+	}
+}
+
+#day{
+	width: 100%;
+	height: 480px;
+	background:#ccc;
+	margin-top: 20px;
+	#dayCen{
+		width: 1198px;
+		height: 458px;
+		margin: 0 auto;
+		border: 1px solid #ccc; 
+		#d_left{
+			@include size(328px,458px);
+			float: left;
+			width: 328px;
+			height: 415px;
+			position: relative;
+			#bg{
+				width: 328px;
+				height: 458px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#jxz{
+				position: absolute;
+				z-index: 3;
+				left: 213px;
+				top: 181px;
+			}
+			#clock{
+				position: absolute;
+				z-index: 3;
+				left: 101px;
+				top: 192px;
+			}
+			#time{
+				height: 40px;
+				font-size: 30px;
+				font-weight: 900;
+				color: #fff;
+				position: absolute;
+				z-index: 3;
+				left: 132px;
+				top: 186px;
+			}
+			#app{
+				@include size(280px,32px);
+				position: absolute;
+				bottom: -20px;
+				left: 25px;
+				z-index: 3;
+				background:#FF7188;
+				border-radius: 16px;
+				
+			}
+		}
+		#d_right{
+			@include size(870px,458px);
+			background-color: #FF7188;
+			float: right;
+			#title{
+				@include size(816px,67px);
+				background-color: orange;
+				margin-left: 26px;
+				border-bottom: 1px dotted #ddd;
+				position: relative;
+				#left-arrow{
+					width: 20px;
+					height: 30px;
+					background:url(../image/index-ico.png) -76px -16px;
+					position: absolute;
+					top: 22px;
+					left: 20px;
+					z-index: 100;
+				}
+				#right-arrow{
+					width: 20px;
+					height: 30px;
+					background:url(../image/index-ico.png) -57px -16px;
+					position: absolute;
+					top: 22px;
+					right:20px 
+				}
+			}
+			#shop{
+				@include size(856px,364px);
+				background-color: #ccc;
+				
+			}
+		}
+		
+	}
+}
